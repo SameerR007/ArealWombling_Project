@@ -8,5 +8,3 @@
     b.Hierarchical Modelling approach
     c.Traditional Vs hierarchical approach
     d.Results
-
-Github link - https://github.com/SameerR007/ArealWombling_Project
