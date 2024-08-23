@@ -438,9 +438,14 @@ Module: Advanced Research Methods in Machine Learning}
     Having said that this paper shows us how one can perform sophisticated technique like wombling in a simple and easy to understand manner, there are some limitations. Firstly, when we performed the t-test between the Boundary Likelihood values that were generated from our traditional approach and hierarchical approach we did not find those samples to be statistically different. This can be an indication that Hierarchical modelling cannot always be proved to be significantly better than traditional approach. When researching about what could have gone wrong, one of the most obvious reason that seems, is the choice of the prior distribution of betas or maybe we failure to account for some important covariates during modelling. Another shortcoming that we faced was while running the code in python some of the instances of code (like running MCMC algorithm) took too much time. Also, since these analysis are done at state level, we might need to do post hoc analysis at district levels of each states to better know about the situations at a finer level. 
     
     There is also another thing to note, that since in our analysis we have done crisp wombling we assume that changes in SDRs between states are significant and quick, and there are clear boundaries between the states with different SDRs. We can extend this analysis by performing fuzzy wombling again by traditional and hierarchical approach. In fuzzy wombling we assume that the changes of variable of interest is gradual which might result in unclear and fuzzy boundaries. The difference in methodology is that instead of assigning the boundary in a discrete manner such that if the BLVs exceed some threshold value c, we now assign probability to the boundary by calculating \(p_{ij}\)(\(D_{ij}\)>c/y) which is equal to \#(\(D_{ij}\)>c)/G where G is the number of draws from MCMC algorithm.
+
+   \appendix
+    \chapter{GitHub Repository}
+    The complete source code and additional materials can be found at \href{https://github.com/SameerR007/ArealWombling_Project}{GitHub Repository.}
     
     % Bibliographie
     \newpage
+    \addcontentsline{toc}{chapter}{Bibliography}
     \printbibliography
 
 \end{document}
